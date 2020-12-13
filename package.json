@@ -34,7 +34,8 @@
   "author": "MysteryPancake",
   "license": "MIT",
   "dependencies": {
+    "@discordjs/opus": "^0.3.3",
     "discord.js": "^12.4.1",
-    "@discordjs/opus": "^0.3.3"
+    "dotenv": "^8.2.0"
   }
 }

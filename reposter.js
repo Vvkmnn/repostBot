@@ -5,8 +5,11 @@ console.log("LOADING LIBRARIES...");
 const fs = require("fs");
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const dotenv = require('dotenv');
 
-client.login("<SECRET_BOT_TOKEN>").catch(console.error);
+dotenv.config();
+
+client.login(process.env.TOKEN).catch(console.error);
 
 client.on("ready", function() {
 	const serverCount = client.guilds.cache.size;
